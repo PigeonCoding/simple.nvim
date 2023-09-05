@@ -14,6 +14,7 @@ git clone https://github.com/PigeonCoding/simple.nvim ~/.config/neovim
 ```
 ### Windows
 ```
+move ~/AppData/Local/nvim ~/AppData/Local/nvim.bak
 git clone https://github.com/PigeonCoding/simple.nvim ~/AppData/Local/nvim
 ```
 launch neovim by running `nvim` and it should install and setup itself automaticly
