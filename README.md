@@ -1,4 +1,4 @@
-# simple.nvim
+# simple.nvim 
  a simple yet powerful neovim config
 
  this config was made to be easy to modify and customize 
@@ -21,6 +21,9 @@ launch neovim by running `nvim` and it should install and setup itself automatic
 
 # What is in this config
 this config has uses [lazy.nvim](https://github.com/folke/lazy.nvim) as a package manager and comes with these packages preconfigured
+
+you currently need to install the lsp servers manually on your machine and add them to the lsp.lua file -- i am working on getting masson.nvim working but i ran into some weird bugs
+
 - https://github.com/folke/which-key.nvim -- shows the key combinations as you use them handy when starting out --
 - https://github.com/nvimdev/indentmini.nvim  -- a pretty gud indentline plugin --
 - https://github.com/folke/noice.nvim -- adds a custom command bar instead of neovim's default one --
@@ -34,7 +37,7 @@ this config has uses [lazy.nvim](https://github.com/folke/lazy.nvim) as a packag
 - https://github.com/neovim/nvim-lspconfig -- neovim's lsp configuration --
 - https://github.com/NvChad/nvim-colorizer.lua -- adds a color preview when typing a color or a hex value like 'red' or '#294859' --
 - https://github.com/karb94/neoscroll.nvim -- not working currently -- adds smooth scrolling -- just use neovide it's just better for this--
-- https://github.com/HiPhish/rainbow-delimiters.nvim -- not working currently -- adds rainbow colors to parentheses and brackets and such --
+- https://github.com/HiPhish/rainbow-delimiters.nvim -- you need to install the TreeSitter language support -- adds rainbow colors to parentheses and brackets and such --
 - https://github.com/ggandor/lightspeed.nvim -- adds a very fast way to navigate a file that's currently on your screen --
 - https://github.com/windwp/nvim-autopairs -- auto pairs parentheses and brackets and quotes etc --
 - https://github.com/nvim-tree/nvim-tree.lua -- file browsing and more --

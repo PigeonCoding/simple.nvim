@@ -76,6 +76,12 @@ require("lazy").setup({
 
 	"ggandor/lightspeed.nvim",
 
+	"simrat39/rust-tools.nvim",
+
+	--[[ "williamboman/mason.nvim", ]]
+
+	--[[ "williamboman/mason-lspconfig.nvim", ]]
+
 	{
 		'windwp/nvim-autopairs',
     		event = "InsertEnter",
@@ -135,11 +141,17 @@ require("lazy").setup({
 
 	{
 		"okuuva/auto-save.nvim",
-  		cmd = "ASToggle", -- optional for lazy loading on command
-  		event = { "InsertLeave", "TextChanged" }, -- optional for lazy loading on trigger events
+		cmd = "ASToggle", -- optional for lazy loading on command
+		event = { "InsertLeave", "TextChanged" }, -- optional for lazy loading on trigger events
 	}
 
 })
+
+--[[ require("mason").setup() ]]
+--[[ require("mason-lspconfig").setup({ ]]
+	--[[ automatic_installation = false ]]
+	-- automatic_installation = exclude = { "rust_analyzer", "solargraph" } 
+--[[ }) ]]
 require("nvim-autopairs").setup()
 require('neoscroll').setup()
 require("crates").setup()
