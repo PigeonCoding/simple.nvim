@@ -76,11 +76,11 @@ require("lazy").setup({
 
 	"ggandor/lightspeed.nvim",
 
-	"simrat39/rust-tools.nvim",
+	--[[ "simrat39/rust-tools.nvim", ]]
 
-	--[[ "williamboman/mason.nvim", ]]
+	"williamboman/mason.nvim",
 
-	--[[ "williamboman/mason-lspconfig.nvim", ]]
+	"williamboman/mason-lspconfig.nvim",
 
 	{
 		'windwp/nvim-autopairs',
@@ -147,11 +147,11 @@ require("lazy").setup({
 
 })
 
---[[ require("mason").setup() ]]
---[[ require("mason-lspconfig").setup({ ]]
-	--[[ automatic_installation = false ]]
-	-- automatic_installation = exclude = { "rust_analyzer", "solargraph" } 
---[[ }) ]]
+require("mason").setup()
+require("mason-lspconfig").setup({
+	automatic_installation = false
+	--[[ -- automatic_installation = exclude = { "rust_analyzer", "solargraph" }  ]]
+})
 require("nvim-autopairs").setup()
 require('neoscroll').setup()
 require("crates").setup()
