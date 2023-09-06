@@ -1,3 +1,6 @@
+
+vim.cmd('tnoremap <Esc> <C-\\><C-n>')
+
 -- set leader key to space
 vim.g.mapleader = " "
 local keymap = vim.keymap -- for conciseness
@@ -18,6 +21,8 @@ vim.keymap.set({"i", "s"}, "<C-E>", function()
 		ls.change_choice(1)
 	end
 end, {silent = true})
+
+--[[ vim.keymap.set({}, "<Esc>") ]]
 
 local setup = {
 	plugins = {
