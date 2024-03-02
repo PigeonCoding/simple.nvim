@@ -26,7 +26,6 @@ you currently need to install the lsp servers manually on your machine and add t
 
 - https://github.com/folke/which-key.nvim -- shows the key combinations as you use them handy when starting out --
 - https://github.com/nvimdev/indentmini.nvim  -- a pretty gud indentline plugin --
-- https://github.com/folke/noice.nvim -- adds a custom command bar instead of neovim's default one --
 - https://github.com/numToStr/Comment.nvim -- adds the ability to comment and uncomment a line of code -- NOTE: you currently can only comment and uncomment a single line at at time --
 - https://github.com/L3MON4D3/LuaSnip -- a powerful snippet engine
 - https://github.com/tanvirtin/monokai.nvim -- a pretty cool theme --
