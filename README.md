@@ -10,7 +10,7 @@ backup your current neovim config and clone the repo to your neovim config folde
 
 ```
 mv ~/.config/nvim{,.bak}
-git clone https://github.com/PigeonCoding/simple.nvim ~/.config/neovim
+git clone https://github.com/PigeonCoding/simple.nvim ~/.config/nvim
 ```
 ### Windows
 ```
