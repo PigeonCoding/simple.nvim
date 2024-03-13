@@ -44,39 +44,39 @@ require("lazy").setup({
   		opts = {},
   		lazy = false
 	},
-	{
-		"L3MON4D3/LuaSnip",
-		version = "2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
-		build = "make install_jsregexp",
-		dependencies = {
-			"rafamadriz/friendly-snippets",
-			"molleweide/LuaSnip-snippets.nvim"
-		},
-		lazy=false
-	},
+	--[[ { ]]
+		--[[ "L3MON4D3/LuaSnip", ]]
+		--[[ version = "2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release) ]]
+		--[[ build = "make install_jsregexp", ]]
+		--[[ dependencies = { ]]
+			--[[ "rafamadriz/friendly-snippets", ]]
+			--[[ "molleweide/LuaSnip-snippets.nvim" ]]
+		--[[ }, ]]
+		--[[ lazy=false ]]
+	--[[ }, ]]
 
 	"tanvirtin/monokai.nvim",
 
-	{
-		'hrsh7th/nvim-cmp',
-		dependencies = {"hrsh7th/cmp-buffer"}
-	},
+	--[[ { ]]
+		--[[ 'hrsh7th/nvim-cmp', ]]
+		--[[ dependencies = {"hrsh7th/cmp-buffer"} ]]
+	--[[ }, ]]
 
-	"saadparwaiz1/cmp_luasnip",
+	--[[ "saadparwaiz1/cmp_luasnip", ]]
 
-	"hrsh7th/cmp-nvim-lsp",
+	--[[ "hrsh7th/cmp-nvim-lsp", ]]
 
-	"neovim/nvim-lspconfig",
+	--[[ "neovim/nvim-lspconfig", ]]
 
 	"NvChad/nvim-colorizer.lua",
 
 	"karb94/neoscroll.nvim",
 
-	"HiPhish/rainbow-delimiters.nvim",
+	--[[ "HiPhish/rainbow-delimiters.nvim", ]]
 
 	"ggandor/lightspeed.nvim",
 
-	"simrat39/rust-tools.nvim",
+	--[[ "simrat39/rust-tools.nvim", ]]
 
 	--[[ "williamboman/mason.nvim", ]]
 
@@ -140,8 +140,8 @@ require("nvim-autopairs").setup()
 require('neoscroll').setup()
 require("crates").setup()
 require("Comment").setup()
-require("luasnip.loaders.from_vscode").lazy_load()
-require("luasnip").snippets = require("luasnip_snippets").load_snippets()
+--[[ require("luasnip.loaders.from_vscode").lazy_load() ]]
+--[[ require("luasnip").snippets = require("luasnip_snippets").load_snippets() ]]
 require('colorizer').setup()
 require('nvim-ts-autotag').setup()
 require("telescope").load_extension("undo")
@@ -149,35 +149,34 @@ require("auto-save").setup {
 	execution_message = {enabled = false}
 }
 
-vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(
-    vim.lsp.diagnostic.on_publish_diagnostics,
-    {
-        underline = true,
-        virtual_text = {
-            spacing = 5,
-            severity_limit = 'Warning',
-        },
-        update_in_insert = true,
-    }
-)
-local rainbow_delimiters = require 'rainbow-delimiters'
-
-vim.g.rainbow_delimiters = {
-    strategy = {
-        [''] = rainbow_delimiters.strategy['global'],
-        vim = rainbow_delimiters.strategy['local'],
-    },
-    query = {
-        [''] = 'rainbow-delimiters',
-        lua = 'rainbow-blocks',
-    },
-    highlight = {
-        'RainbowDelimiterRed',
-        'RainbowDelimiterYellow',
-        'RainbowDelimiterBlue',
-        'RainbowDelimiterOrange',
-        'RainbowDelimiterGreen',
-        'RainbowDelimiterViolet',
-        'RainbowDelimiterCyan',
-    },
-}
+--[[ vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with( ]]
+    --[[ vim.lsp.diagnostic.on_publish_diagnostics, ]]
+    --[[ { ]]
+        --[[ underline = true, ]]
+        --[[ virtual_text = { ]]
+            --[[ spacing = 5, ]]
+            --[[ severity_limit = 'Warning', ]]
+        --[[ }, ]]
+        --[[ update_in_insert = true, ]]
+    --[[ } ]]
+--[[ ) ]]
+--[[ local rainbow_delimiters = require 'rainbow-delimiters' ]]
+--[[ vim.g.rainbow_delimiters = { ]]
+    --[[ strategy = { ]]
+        --[[ [''] = rainbow_delimiters.strategy['global'], ]]
+        --[[ vim = rainbow_delimiters.strategy['local'], ]]
+    --[[ }, ]]
+    --[[ query = { ]]
+        --[[ [''] = 'rainbow-delimiters', ]]
+        --[[ lua = 'rainbow-blocks', ]]
+    --[[ }, ]]
+    --[[ highlight = { ]]
+        --[[ 'RainbowDelimiterRed', ]]
+        --[[ 'RainbowDelimiterYellow', ]]
+        --[[ 'RainbowDelimiterBlue', ]]
+        --[[ 'RainbowDelimiterOrange', ]]
+        --[[ 'RainbowDelimiterGreen', ]]
+        --[[ 'RainbowDelimiterViolet', ]]
+        --[[ 'RainbowDelimiterCyan', ]]
+    --[[ }, ]]
+--[[ } ]]
