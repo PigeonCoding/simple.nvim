@@ -1,5 +1,0 @@
-function cool()
-	-- code
-end
-
-
